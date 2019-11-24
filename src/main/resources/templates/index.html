@@ -28,15 +28,13 @@
 			<td th:text="${product.origine}">Origine</td>
 			<td th:text="${product.prix}">Prix</td>
 			<td>
-				<a th:href="@{'/edit/' + ${product.id}">Modifier</a>
-				&nbsp;
-				<a th:href="@{'/delete/' + ${product.id}">Supprimer</a>
+				<a th:href="@{'/edit/' + ${product.id}}">Modifier</a>
+                	&nbsp;&nbsp;&nbsp;
+                <a th:href="@{'/delete/' + ${product.id}}">Supprimer</a>
 			</td>
 			</tr>
-		</tbody>
-	
+		</tbody>	
 	</table>
-
 </div>
 </body>
 </html>

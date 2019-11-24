@@ -1,4 +1,4 @@
-package model;
+package com.adrien.pmanager;
 
 import java.util.List;
 

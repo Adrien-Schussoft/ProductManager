@@ -1,4 +1,4 @@
-package model;
+package com.adrien.pmanager;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -13,7 +13,7 @@ public class Product {
 	private String marque;
 	private String origine;
 	private float prix;
-	public Product() {
+	protected Product() {
 	}
 	
 	protected Product(Long id,String nom,String marque,String origine,float prix) {	
