@@ -13,7 +13,7 @@ public class Product {
 	private String marque;
 	private String origine;
 	private float prix;
-	protected Product() {
+	public Product() {
 	}
 	
 	protected Product(Long id,String nom,String marque,String origine,float prix) {	

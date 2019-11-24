@@ -1,8 +1,10 @@
-package com.adrien.pmanager;
+package controller;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -11,12 +13,22 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.adrien.pmanager.Product;
+import com.adrien.pmanager.ProductRepository;
+import com.adrien.pmanager.ProductService;
 
+@Component
 @Controller
 public class ApplicationController {
 
 	@Autowired
 	private ProductService service;
+	
+	@Bean
+	public ProductService ps() {
+		return new ProductService();
+	}
+	
 		
 	@RequestMapping("/")
 	public String HomePage(Model model) {
