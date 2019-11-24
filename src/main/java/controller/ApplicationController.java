@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.adrien.pmanager.Product;
-import com.adrien.pmanager.ProductRepository;
 import com.adrien.pmanager.ProductService;
 
 @Component
