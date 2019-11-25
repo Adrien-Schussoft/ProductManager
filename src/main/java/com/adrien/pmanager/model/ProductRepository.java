@@ -1,4 +1,4 @@
-package com.adrien.pmanager;
+package com.adrien.pmanager.model;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

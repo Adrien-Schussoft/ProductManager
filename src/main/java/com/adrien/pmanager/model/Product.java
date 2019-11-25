@@ -1,4 +1,4 @@
-package com.adrien.pmanager;
+package com.adrien.pmanager.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
