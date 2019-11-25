@@ -3,6 +3,7 @@
 	  xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="utf-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css">
 <title>Nouveau produit</title>
 </head>
 <body>
@@ -10,7 +11,7 @@
 	<h1>Nouveau produit</h1>
 	
 	<form action="#" th:action="@{/save}" th:object="${product}" method="post">
-		<table border="0" cellpadding="10">
+		<table border="0" cellpadding="10" class="table table-dark">
 			<tr>
 					<td>Désignation:</td>
 					<td><input type="text" th:field="*{nom}" /></td>
