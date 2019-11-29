@@ -3,7 +3,6 @@ package com.adrien.pmanager.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -22,12 +21,6 @@ public class ApplicationController {
 
 	@Autowired
 	private ProductService service;
-	
-	@Bean
-	public ProductService ps() {
-		return new ProductService();
-	}
-	
 		
 	@RequestMapping("/")
 	public String HomePage(Model model) {
