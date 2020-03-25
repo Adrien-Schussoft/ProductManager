@@ -3,7 +3,6 @@ package com.adrien.pmanager.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -14,7 +13,6 @@ import org.springframework.web.servlet.ModelAndView;
 import com.adrien.pmanager.model.Product;
 import com.adrien.pmanager.model.ProductService;
 
-@Component
 @Controller
 public class ApplicationController {
 
@@ -27,10 +25,12 @@ public class ApplicationController {
 		model.addAttribute("listProducts", listProducts);		
 		return "index";
 	}
-	
+
+	@Autowired
+	protected Product product;
+
 	@RequestMapping("/new")
 	public String newProductPage(Model model) {
-		Product product = new Product();
 		model.addAttribute("product", product);
 		return "new_product";
 	}

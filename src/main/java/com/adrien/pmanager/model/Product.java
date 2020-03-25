@@ -1,10 +1,12 @@
 package com.adrien.pmanager.model;
 
+import org.springframework.stereotype.Component;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-
+@Component
 @Entity
 public class Product {
 
@@ -13,7 +15,7 @@ public class Product {
 	private String marque;
 	private String origine;
 	private float prix;
-	public Product() {
+	protected Product() {
 	}
 	
 	protected Product(Long id,String nom,String marque,String origine,float prix) {	
